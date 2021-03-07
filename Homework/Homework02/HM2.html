@@ -16509,13 +16509,13 @@ z
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># MB-SGD with batch size b=8</span>
 <span class="n">lam</span> <span class="o">=</span> <span class="mf">1E-6</span> <span class="c1"># do not change</span>
 <span class="n">b</span> <span class="o">=</span> <span class="mi">8</span> <span class="c1"># do not change</span>
-<span class="n">stepsize</span> <span class="o">=</span> <span class="mf">0.04</span> <span class="c1"># you must tune this parameter</span>
+<span class="n">stepsize</span> <span class="o">=</span> <span class="mf">0.028</span> <span class="c1"># you must tune this parameter</span>
 
 <span class="n">w</span><span class="p">,</span> <span class="n">objvals_mbsgd8</span> <span class="o">=</span> <span class="n">mb_sgd</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">lam</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">stepsize</span><span class="p">)</span>
 </pre></div>
@@ -16538,106 +16538,106 @@ z
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>Shape of our data is (640, 9)
-Objective value at epoch t=0 is 0.5907086313680419.
-Objective value at epoch t=1 is 0.5174865542587566.
-Objective value at epoch t=2 is 0.4988172059011296.
-Objective value at epoch t=3 is 0.49052815624454754.
-Objective value at epoch t=4 is 0.4866444401708859.
-Objective value at epoch t=5 is 0.4837510059460338.
-Objective value at epoch t=6 is 0.48208727203836643.
-Objective value at epoch t=7 is 0.48087978316349267.
-Objective value at epoch t=8 is 0.480202382671704.
-Objective value at epoch t=9 is 0.47959719139188534.
-Objective value at epoch t=10 is 0.47903102302482187.
-Objective value at epoch t=11 is 0.4788731968795389.
-Objective value at epoch t=12 is 0.4785339488472452.
-Objective value at epoch t=13 is 0.47831684353931114.
-Objective value at epoch t=14 is 0.4781107641888308.
-Objective value at epoch t=15 is 0.4778894414537291.
-Objective value at epoch t=16 is 0.4777428754268054.
-Objective value at epoch t=17 is 0.47768883516012134.
-Objective value at epoch t=18 is 0.4775920891905769.
-Objective value at epoch t=19 is 0.4774842462000419.
-Objective value at epoch t=20 is 0.47738815671252144.
-Objective value at epoch t=21 is 0.47731436044528863.
-Objective value at epoch t=22 is 0.4772543268221724.
-Objective value at epoch t=23 is 0.47716983951970804.
-Objective value at epoch t=24 is 0.4771502457505856.
-Objective value at epoch t=25 is 0.47709137922409683.
-Objective value at epoch t=26 is 0.4770724907439746.
-Objective value at epoch t=27 is 0.4770309959673919.
-Objective value at epoch t=28 is 0.4769724811118466.
-Objective value at epoch t=29 is 0.47697201565923636.
-Objective value at epoch t=30 is 0.47694119674758867.
-Objective value at epoch t=31 is 0.4769383296588505.
-Objective value at epoch t=32 is 0.4769047334105883.
-Objective value at epoch t=33 is 0.4768891147066121.
-Objective value at epoch t=34 is 0.4768807938425331.
-Objective value at epoch t=35 is 0.4768505198226246.
-Objective value at epoch t=36 is 0.47684648924406614.
-Objective value at epoch t=37 is 0.47682670582171716.
-Objective value at epoch t=38 is 0.4768259351258962.
-Objective value at epoch t=39 is 0.47680951978391584.
-Objective value at epoch t=40 is 0.47680351404898846.
-Objective value at epoch t=41 is 0.47679664445277714.
-Objective value at epoch t=42 is 0.4767936999381.
-Objective value at epoch t=43 is 0.47678348392835757.
-Objective value at epoch t=44 is 0.4767748916918758.
-Objective value at epoch t=45 is 0.47677449372668823.
-Objective value at epoch t=46 is 0.476767731199437.
-Objective value at epoch t=47 is 0.47676558296013904.
-Objective value at epoch t=48 is 0.4767630265105594.
-Objective value at epoch t=49 is 0.4767582243185302.
-Objective value at epoch t=50 is 0.4767586183966361.
-Objective value at epoch t=51 is 0.4767524027015737.
-Objective value at epoch t=52 is 0.4767495275683086.
-Objective value at epoch t=53 is 0.4767480540150978.
-Objective value at epoch t=54 is 0.47674676048790693.
-Objective value at epoch t=55 is 0.4767446031495556.
-Objective value at epoch t=56 is 0.47674388569321796.
-Objective value at epoch t=57 is 0.47674229933492684.
-Objective value at epoch t=58 is 0.4767401226550804.
-Objective value at epoch t=59 is 0.4767402263939303.
-Objective value at epoch t=60 is 0.4767384045210464.
-Objective value at epoch t=61 is 0.47673830206154577.
-Objective value at epoch t=62 is 0.47673728295092915.
-Objective value at epoch t=63 is 0.47673635120183666.
-Objective value at epoch t=64 is 0.47673580257382.
-Objective value at epoch t=65 is 0.4767349803416364.
-Objective value at epoch t=66 is 0.4767346681178636.
-Objective value at epoch t=67 is 0.4767338455766391.
-Objective value at epoch t=68 is 0.476733455389356.
-Objective value at epoch t=69 is 0.47673310665096064.
-Objective value at epoch t=70 is 0.4767327279686887.
-Objective value at epoch t=71 is 0.47673241395159816.
-Objective value at epoch t=72 is 0.47673219829121977.
-Objective value at epoch t=73 is 0.4767320336252389.
-Objective value at epoch t=74 is 0.4767317595986317.
-Objective value at epoch t=75 is 0.47673155847434956.
-Objective value at epoch t=76 is 0.4767312948300789.
-Objective value at epoch t=77 is 0.4767313120442621.
-Objective value at epoch t=78 is 0.47673105959368023.
-Objective value at epoch t=79 is 0.47673088763860305.
-Objective value at epoch t=80 is 0.476730715623822.
-Objective value at epoch t=81 is 0.47673074211495325.
-Objective value at epoch t=82 is 0.47673057474504105.
-Objective value at epoch t=83 is 0.47673047959100634.
-Objective value at epoch t=84 is 0.47673037231361703.
-Objective value at epoch t=85 is 0.4767303070598882.
-Objective value at epoch t=86 is 0.47673027173349.
-Objective value at epoch t=87 is 0.47673022574946733.
-Objective value at epoch t=88 is 0.4767301676209884.
-Objective value at epoch t=89 is 0.4767301231016211.
-Objective value at epoch t=90 is 0.4767300631959407.
-Objective value at epoch t=91 is 0.4767300311915217.
-Objective value at epoch t=92 is 0.4767300030053887.
-Objective value at epoch t=93 is 0.4767299930365991.
-Objective value at epoch t=94 is 0.4767299441343865.
-Objective value at epoch t=95 is 0.47672993454939094.
-Objective value at epoch t=96 is 0.47672991091520867.
-Objective value at epoch t=97 is 0.4767298896989235.
-Objective value at epoch t=98 is 0.47672986514896143.
-Objective value at epoch t=99 is 0.4767298512023867.
+Objective value at epoch t=0 is 0.6108585306654876.
+Objective value at epoch t=1 is 0.5357671885099208.
+Objective value at epoch t=2 is 0.5111633111857418.
+Objective value at epoch t=3 is 0.49986753307923.
+Objective value at epoch t=4 is 0.49343212488891436.
+Objective value at epoch t=5 is 0.4893579746272419.
+Objective value at epoch t=6 is 0.48671678403285307.
+Objective value at epoch t=7 is 0.48486262904851846.
+Objective value at epoch t=8 is 0.4835442424072619.
+Objective value at epoch t=9 is 0.4824986614341076.
+Objective value at epoch t=10 is 0.4817238256441706.
+Objective value at epoch t=11 is 0.4810558784642295.
+Objective value at epoch t=12 is 0.4805881471824932.
+Objective value at epoch t=13 is 0.48013630903821036.
+Objective value at epoch t=14 is 0.47988684843489054.
+Objective value at epoch t=15 is 0.4795814014905838.
+Objective value at epoch t=16 is 0.4793170552777303.
+Objective value at epoch t=17 is 0.47920352393276744.
+Objective value at epoch t=18 is 0.47895587922732596.
+Objective value at epoch t=19 is 0.4787986646992926.
+Objective value at epoch t=20 is 0.47869318847901726.
+Objective value at epoch t=21 is 0.4785955849125593.
+Objective value at epoch t=22 is 0.47846224110857866.
+Objective value at epoch t=23 is 0.4783895394130416.
+Objective value at epoch t=24 is 0.47831216782396613.
+Objective value at epoch t=25 is 0.47822267353048115.
+Objective value at epoch t=26 is 0.4782007626398251.
+Objective value at epoch t=27 is 0.47814307800770156.
+Objective value at epoch t=28 is 0.478105145850686.
+Objective value at epoch t=29 is 0.4780714740280173.
+Objective value at epoch t=30 is 0.47801544755351477.
+Objective value at epoch t=31 is 0.4779759720559932.
+Objective value at epoch t=32 is 0.47794497261044394.
+Objective value at epoch t=33 is 0.4779333258192434.
+Objective value at epoch t=34 is 0.4779112394941607.
+Objective value at epoch t=35 is 0.4778874364890891.
+Objective value at epoch t=36 is 0.4778711552454415.
+Objective value at epoch t=37 is 0.47786168303039.
+Objective value at epoch t=38 is 0.4778433832755239.
+Objective value at epoch t=39 is 0.4778296223024693.
+Objective value at epoch t=40 is 0.4778165418792145.
+Objective value at epoch t=41 is 0.4778067325242967.
+Objective value at epoch t=42 is 0.4777971329841968.
+Objective value at epoch t=43 is 0.47778716481033523.
+Objective value at epoch t=44 is 0.47777862900748636.
+Objective value at epoch t=45 is 0.47777345872596066.
+Objective value at epoch t=46 is 0.47776779540376213.
+Objective value at epoch t=47 is 0.47776072393623237.
+Objective value at epoch t=48 is 0.4777574367738315.
+Objective value at epoch t=49 is 0.477753061047434.
+Objective value at epoch t=50 is 0.477747341490869.
+Objective value at epoch t=51 is 0.4777445678583752.
+Objective value at epoch t=52 is 0.4777410712173662.
+Objective value at epoch t=53 is 0.4777386348428901.
+Objective value at epoch t=54 is 0.4777363822595295.
+Objective value at epoch t=55 is 0.47773425962361166.
+Objective value at epoch t=56 is 0.47773174048405387.
+Objective value at epoch t=57 is 0.4777293600622289.
+Objective value at epoch t=58 is 0.4777275529285241.
+Objective value at epoch t=59 is 0.4777266702091093.
+Objective value at epoch t=60 is 0.4777251405147641.
+Objective value at epoch t=61 is 0.4777236472944401.
+Objective value at epoch t=62 is 0.4777226698521691.
+Objective value at epoch t=63 is 0.4777216406798289.
+Objective value at epoch t=64 is 0.4777209643260621.
+Objective value at epoch t=65 is 0.4777196753106834.
+Objective value at epoch t=66 is 0.47771918147939.
+Objective value at epoch t=67 is 0.47771834536991553.
+Objective value at epoch t=68 is 0.4777178387946826.
+Objective value at epoch t=69 is 0.4777172222529444.
+Objective value at epoch t=70 is 0.4777169660041138.
+Objective value at epoch t=71 is 0.47771636631272046.
+Objective value at epoch t=72 is 0.4777159329149486.
+Objective value at epoch t=73 is 0.47771556796761383.
+Objective value at epoch t=74 is 0.4777152980487912.
+Objective value at epoch t=75 is 0.4777149604581866.
+Objective value at epoch t=76 is 0.4777146640300806.
+Objective value at epoch t=77 is 0.4777145547293096.
+Objective value at epoch t=78 is 0.4777142954905944.
+Objective value at epoch t=79 is 0.4777141685641658.
+Objective value at epoch t=80 is 0.47771393857879285.
+Objective value at epoch t=81 is 0.4777137970169866.
+Objective value at epoch t=82 is 0.47771363837131425.
+Objective value at epoch t=83 is 0.4777135330686694.
+Objective value at epoch t=84 is 0.47771341849303406.
+Objective value at epoch t=85 is 0.47771333261239074.
+Objective value at epoch t=86 is 0.47771323287753004.
+Objective value at epoch t=87 is 0.4777131636667239.
+Objective value at epoch t=88 is 0.47771307461496004.
+Objective value at epoch t=89 is 0.4777130317865196.
+Objective value at epoch t=90 is 0.47771296441138533.
+Objective value at epoch t=91 is 0.47771292241322244.
+Objective value at epoch t=92 is 0.4777128649851255.
+Objective value at epoch t=93 is 0.47771282404265253.
+Objective value at epoch t=94 is 0.47771278548573726.
+Objective value at epoch t=95 is 0.47771272789075336.
+Objective value at epoch t=96 is 0.4777127181635345.
+Objective value at epoch t=97 is 0.4777126831755818.
+Objective value at epoch t=98 is 0.47771265923242223.
+Objective value at epoch t=99 is 0.4777126483322479.
 </pre>
 </div>
 </div>
@@ -16649,13 +16649,13 @@ Objective value at epoch t=99 is 0.4767298512023867.
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># MB-SGD with batch size b=64</span>
 <span class="n">lam</span> <span class="o">=</span> <span class="mf">1E-6</span> <span class="c1"># do not change</span>
 <span class="n">b</span> <span class="o">=</span> <span class="mi">64</span> <span class="c1"># do not change</span>
-<span class="n">stepsize</span> <span class="o">=</span> <span class="mf">0.25</span> <span class="c1"># you must tune this parameter</span>
+<span class="n">stepsize</span> <span class="o">=</span> <span class="mf">0.24</span> <span class="c1"># you must tune this parameter</span>
 
 <span class="n">w</span><span class="p">,</span> <span class="n">objvals_mbsgd64</span> <span class="o">=</span> <span class="n">mb_sgd</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">lam</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">stepsize</span><span class="p">)</span>
 </pre></div>
@@ -16678,106 +16678,106 @@ Objective value at epoch t=99 is 0.4767298512023867.
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>Shape of our data is (640, 9)
-Objective value at epoch t=0 is 0.6090505078716276.
-Objective value at epoch t=1 is 0.5297919404140057.
-Objective value at epoch t=2 is 0.5064021590311358.
-Objective value at epoch t=3 is 0.4967708391977677.
-Objective value at epoch t=4 is 0.4904260482683318.
-Objective value at epoch t=5 is 0.48769339455503313.
-Objective value at epoch t=6 is 0.4847230307618659.
-Objective value at epoch t=7 is 0.4833559928560277.
-Objective value at epoch t=8 is 0.4821438038885358.
-Objective value at epoch t=9 is 0.48148622223875037.
-Objective value at epoch t=10 is 0.4807193898674381.
-Objective value at epoch t=11 is 0.47997576242330886.
-Objective value at epoch t=12 is 0.47970692707217866.
-Objective value at epoch t=13 is 0.47960501263494404.
-Objective value at epoch t=14 is 0.4789119749507152.
-Objective value at epoch t=15 is 0.47877215072195745.
-Objective value at epoch t=16 is 0.47863353619067794.
-Objective value at epoch t=17 is 0.478496057869746.
-Objective value at epoch t=18 is 0.4782293923725887.
-Objective value at epoch t=19 is 0.4783134960247257.
-Objective value at epoch t=20 is 0.47802852843287946.
-Objective value at epoch t=21 is 0.47795213960064.
-Objective value at epoch t=22 is 0.4778895515273863.
-Objective value at epoch t=23 is 0.47777551241763055.
-Objective value at epoch t=24 is 0.4777644073935209.
-Objective value at epoch t=25 is 0.477729779112224.
-Objective value at epoch t=26 is 0.47771754428089686.
-Objective value at epoch t=27 is 0.4775979843607791.
-Objective value at epoch t=28 is 0.47757190448999626.
-Objective value at epoch t=29 is 0.477552644597585.
-Objective value at epoch t=30 is 0.47750785909395005.
-Objective value at epoch t=31 is 0.4775138296441465.
-Objective value at epoch t=32 is 0.4774587109663898.
-Objective value at epoch t=33 is 0.47745872048419713.
-Objective value at epoch t=34 is 0.4774409430628025.
-Objective value at epoch t=35 is 0.4774137910360035.
-Objective value at epoch t=36 is 0.47742129018772916.
-Objective value at epoch t=37 is 0.4773897566149993.
-Objective value at epoch t=38 is 0.47737870687770856.
-Objective value at epoch t=39 is 0.4773601809132977.
-Objective value at epoch t=40 is 0.47734884323475546.
-Objective value at epoch t=41 is 0.4773529913619542.
-Objective value at epoch t=42 is 0.47733782448034817.
-Objective value at epoch t=43 is 0.4773293370853704.
-Objective value at epoch t=44 is 0.477329179894688.
-Objective value at epoch t=45 is 0.47732307321949596.
-Objective value at epoch t=46 is 0.4773123800214827.
-Objective value at epoch t=47 is 0.477315492503655.
-Objective value at epoch t=48 is 0.47730198253969736.
-Objective value at epoch t=49 is 0.47730054549559664.
-Objective value at epoch t=50 is 0.4772973402503955.
-Objective value at epoch t=51 is 0.47729294597779737.
-Objective value at epoch t=52 is 0.47729164981098127.
-Objective value at epoch t=53 is 0.4772923131455748.
-Objective value at epoch t=54 is 0.4772877751727501.
-Objective value at epoch t=55 is 0.4772870151140422.
-Objective value at epoch t=56 is 0.4772864438763896.
-Objective value at epoch t=57 is 0.4772866133055535.
-Objective value at epoch t=58 is 0.4772825549682042.
-Objective value at epoch t=59 is 0.4772822865623455.
-Objective value at epoch t=60 is 0.4772788908352864.
-Objective value at epoch t=61 is 0.477277358930849.
-Objective value at epoch t=62 is 0.4772775571504497.
-Objective value at epoch t=63 is 0.4772767435955504.
-Objective value at epoch t=64 is 0.47727593019839426.
-Objective value at epoch t=65 is 0.4772748097966386.
-Objective value at epoch t=66 is 0.47727428589801874.
-Objective value at epoch t=67 is 0.47727440491745804.
-Objective value at epoch t=68 is 0.47727329919219785.
-Objective value at epoch t=69 is 0.47727293444624125.
-Objective value at epoch t=70 is 0.47727244892298365.
-Objective value at epoch t=71 is 0.4772723451764177.
-Objective value at epoch t=72 is 0.47727242042665396.
-Objective value at epoch t=73 is 0.4772721358483514.
-Objective value at epoch t=74 is 0.47727156772241985.
-Objective value at epoch t=75 is 0.47727179864796154.
-Objective value at epoch t=76 is 0.4772710823535413.
-Objective value at epoch t=77 is 0.47727090251516235.
-Objective value at epoch t=78 is 0.47727071035546353.
-Objective value at epoch t=79 is 0.47727081701853785.
-Objective value at epoch t=80 is 0.47727073880876497.
-Objective value at epoch t=81 is 0.47727047216993623.
-Objective value at epoch t=82 is 0.47727035466783363.
-Objective value at epoch t=83 is 0.4772702009192704.
-Objective value at epoch t=84 is 0.4772700699677671.
-Objective value at epoch t=85 is 0.47727003365526477.
-Objective value at epoch t=86 is 0.4772700038110118.
-Objective value at epoch t=87 is 0.47726999734510134.
-Objective value at epoch t=88 is 0.4772698125441745.
-Objective value at epoch t=89 is 0.4772697292126858.
-Objective value at epoch t=90 is 0.4772698198506866.
-Objective value at epoch t=91 is 0.477269696832521.
-Objective value at epoch t=92 is 0.4772697082358334.
-Objective value at epoch t=93 is 0.4772696366506618.
-Objective value at epoch t=94 is 0.47726964489367185.
-Objective value at epoch t=95 is 0.4772696147762428.
-Objective value at epoch t=96 is 0.47726955034656193.
-Objective value at epoch t=97 is 0.4772695321625604.
-Objective value at epoch t=98 is 0.47726951501331366.
-Objective value at epoch t=99 is 0.47726951337138185.
+Objective value at epoch t=0 is 0.6095149489302413.
+Objective value at epoch t=1 is 0.5314893083476516.
+Objective value at epoch t=2 is 0.5079379954972721.
+Objective value at epoch t=3 is 0.49750376879752223.
+Objective value at epoch t=4 is 0.491703427587021.
+Objective value at epoch t=5 is 0.4875647402981375.
+Objective value at epoch t=6 is 0.48519695514720595.
+Objective value at epoch t=7 is 0.48323517386180426.
+Objective value at epoch t=8 is 0.48236469910140684.
+Objective value at epoch t=9 is 0.481526408978526.
+Objective value at epoch t=10 is 0.4812446392315507.
+Objective value at epoch t=11 is 0.4802458052310964.
+Objective value at epoch t=12 is 0.4797672606673262.
+Objective value at epoch t=13 is 0.47944500350011154.
+Objective value at epoch t=14 is 0.47936125455274503.
+Objective value at epoch t=15 is 0.47888506559631727.
+Objective value at epoch t=16 is 0.4787418753220005.
+Objective value at epoch t=17 is 0.47852328329999116.
+Objective value at epoch t=18 is 0.4784548152024577.
+Objective value at epoch t=19 is 0.4783628397210255.
+Objective value at epoch t=20 is 0.47823393051120816.
+Objective value at epoch t=21 is 0.47822227826779484.
+Objective value at epoch t=22 is 0.47801860484532915.
+Objective value at epoch t=23 is 0.4779531520092141.
+Objective value at epoch t=24 is 0.47788682944908095.
+Objective value at epoch t=25 is 0.477823477074134.
+Objective value at epoch t=26 is 0.4778762000804487.
+Objective value at epoch t=27 is 0.47775085274373874.
+Objective value at epoch t=28 is 0.47768311791436124.
+Objective value at epoch t=29 is 0.47768987891644904.
+Objective value at epoch t=30 is 0.47762432948746136.
+Objective value at epoch t=31 is 0.4775978586349597.
+Objective value at epoch t=32 is 0.4776022013723741.
+Objective value at epoch t=33 is 0.4775561755169364.
+Objective value at epoch t=34 is 0.47756993008584175.
+Objective value at epoch t=35 is 0.47753494260616247.
+Objective value at epoch t=36 is 0.4775164223979239.
+Objective value at epoch t=37 is 0.4775177022128698.
+Objective value at epoch t=38 is 0.47749072025268.
+Objective value at epoch t=39 is 0.47748450594710823.
+Objective value at epoch t=40 is 0.477487446849853.
+Objective value at epoch t=41 is 0.47746127911136477.
+Objective value at epoch t=42 is 0.47745926685176965.
+Objective value at epoch t=43 is 0.4774519428859085.
+Objective value at epoch t=44 is 0.4774472553039327.
+Objective value at epoch t=45 is 0.47744644259998203.
+Objective value at epoch t=46 is 0.4774362106522584.
+Objective value at epoch t=47 is 0.47742993536541806.
+Objective value at epoch t=48 is 0.47742701115845687.
+Objective value at epoch t=49 is 0.4774202850849215.
+Objective value at epoch t=50 is 0.47742155136010594.
+Objective value at epoch t=51 is 0.4774197487065789.
+Objective value at epoch t=52 is 0.47741378150934743.
+Objective value at epoch t=53 is 0.47741084533810085.
+Objective value at epoch t=54 is 0.47741369086107693.
+Objective value at epoch t=55 is 0.4774104504261486.
+Objective value at epoch t=56 is 0.4774072116783124.
+Objective value at epoch t=57 is 0.4774028591837688.
+Objective value at epoch t=58 is 0.47740154978015975.
+Objective value at epoch t=59 is 0.4774022701246947.
+Objective value at epoch t=60 is 0.4774013587779831.
+Objective value at epoch t=61 is 0.477399497397441.
+Objective value at epoch t=62 is 0.47739848086133.
+Objective value at epoch t=63 is 0.47739848982278044.
+Objective value at epoch t=64 is 0.47739653001296906.
+Objective value at epoch t=65 is 0.47739601114236435.
+Objective value at epoch t=66 is 0.47739442163610263.
+Objective value at epoch t=67 is 0.4773945901712386.
+Objective value at epoch t=68 is 0.47739405893853853.
+Objective value at epoch t=69 is 0.4773937724137351.
+Objective value at epoch t=70 is 0.4773934112863946.
+Objective value at epoch t=71 is 0.4773929255828405.
+Objective value at epoch t=72 is 0.47739241656329545.
+Objective value at epoch t=73 is 0.477392510421924.
+Objective value at epoch t=74 is 0.47739163777281357.
+Objective value at epoch t=75 is 0.47739164509595267.
+Objective value at epoch t=76 is 0.47739141268953683.
+Objective value at epoch t=77 is 0.4773915179837734.
+Objective value at epoch t=78 is 0.47739120276283015.
+Objective value at epoch t=79 is 0.4773911247783256.
+Objective value at epoch t=80 is 0.4773911280127886.
+Objective value at epoch t=81 is 0.4773909846556439.
+Objective value at epoch t=82 is 0.4773906661853565.
+Objective value at epoch t=83 is 0.4773905307709943.
+Objective value at epoch t=84 is 0.47739040998000054.
+Objective value at epoch t=85 is 0.47739040618227346.
+Objective value at epoch t=86 is 0.477390251304629.
+Objective value at epoch t=87 is 0.47739022914076995.
+Objective value at epoch t=88 is 0.47739018811092454.
+Objective value at epoch t=89 is 0.4773901755122066.
+Objective value at epoch t=90 is 0.477390023195894.
+Objective value at epoch t=91 is 0.4773899629304041.
+Objective value at epoch t=92 is 0.477389960080262.
+Objective value at epoch t=93 is 0.4773898662916344.
+Objective value at epoch t=94 is 0.4773899092705453.
+Objective value at epoch t=95 is 0.4773899073670721.
+Objective value at epoch t=96 is 0.4773898307151775.
+Objective value at epoch t=97 is 0.4773897857629727.
+Objective value at epoch t=98 is 0.47738976987772264.
+Objective value at epoch t=99 is 0.4773897593097865.
 </pre>
 </div>
 </div>
@@ -16817,7 +16817,7 @@ Objective value at epoch t=99 is 0.47726951337138185.
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[36]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># plot the 4 curves:</span>
@@ -16830,8 +16830,8 @@ Objective value at epoch t=99 is 0.47726951337138185.
 
 <span class="n">line0</span><span class="p">,</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">epochs_gd</span><span class="p">,</span> <span class="n">objvals_gd</span><span class="p">,</span> <span class="s1">&#39;--b&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
 <span class="n">line1</span><span class="p">,</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">epochs_sgd</span><span class="p">,</span> <span class="n">objvals_sgd</span><span class="p">,</span> <span class="s1">&#39;-r&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-<span class="n">line2</span><span class="p">,</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">epochs_mbsgd8</span><span class="p">,</span> <span class="n">objvals_mbsgd8</span><span class="p">,</span> <span class="s1">&#39;-y&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;dotted&#39;</span><span class="p">)</span>
 <span class="n">line3</span><span class="p">,</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">epochs_mbsgd64</span><span class="p">,</span> <span class="n">objvals_mbsgd64</span><span class="p">,</span> <span class="s1">&#39;-g&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;dashdot&#39;</span><span class="p">)</span>
+<span class="n">line2</span><span class="p">,</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">epochs_mbsgd8</span><span class="p">,</span> <span class="n">objvals_mbsgd8</span><span class="p">,</span> <span class="s1">&#39;-y&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;dotted&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Epochs&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Objective Value&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
@@ -16869,7 +16869,7 @@ Objective value at epoch t=99 is 0.47726951337138185.
   <rdf:RDF xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2021-03-07T09:16:58.676508</dc:date>
+    <dc:date>2021-03-07T09:31:42.077542</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -16906,10 +16906,10 @@ z
       <defs>
        <path d="M 0 0 
 L 0 3.5 
-" id="m33a43168f4" style="stroke:#000000;stroke-width:0.8;"/>
+" id="mf5b7c9e5e3" style="stroke:#000000;stroke-width:0.8;"/>
       </defs>
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="88.717332" xlink:href="#m33a43168f4" y="228.65215"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="88.717332" xlink:href="#mf5b7c9e5e3" y="228.65215"/>
       </g>
      </g>
      <g id="text_1">
@@ -16945,7 +16945,7 @@ z
     <g id="xtick_2">
      <g id="line2d_2">
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="151.48938" xlink:href="#m33a43168f4" y="228.65215"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="151.48938" xlink:href="#mf5b7c9e5e3" y="228.65215"/>
       </g>
      </g>
      <g id="text_2">
@@ -16985,7 +16985,7 @@ z
     <g id="xtick_3">
      <g id="line2d_3">
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="214.261428" xlink:href="#m33a43168f4" y="228.65215"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="214.261428" xlink:href="#mf5b7c9e5e3" y="228.65215"/>
       </g>
      </g>
      <g id="text_3">
@@ -17018,7 +17018,7 @@ z
     <g id="xtick_4">
      <g id="line2d_4">
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="277.033476" xlink:href="#m33a43168f4" y="228.65215"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="277.033476" xlink:href="#mf5b7c9e5e3" y="228.65215"/>
       </g>
      </g>
      <g id="text_4">
@@ -17064,7 +17064,7 @@ z
     <g id="xtick_5">
      <g id="line2d_5">
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="339.805524" xlink:href="#m33a43168f4" y="228.65215"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="339.805524" xlink:href="#mf5b7c9e5e3" y="228.65215"/>
       </g>
      </g>
      <g id="text_5">
@@ -17119,7 +17119,7 @@ z
     <g id="xtick_6">
      <g id="line2d_6">
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="402.577572" xlink:href="#m33a43168f4" y="228.65215"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="402.577572" xlink:href="#mf5b7c9e5e3" y="228.65215"/>
       </g>
      </g>
      <g id="text_6">
@@ -17298,10 +17298,10 @@ z
       <defs>
        <path d="M 0 0 
 L -3.5 0 
-" id="m719b66ba05" style="stroke:#000000;stroke-width:0.8;"/>
+" id="m96f17eed30" style="stroke:#000000;stroke-width:0.8;"/>
       </defs>
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="73.18125" xlink:href="#m719b66ba05" y="197.059192"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="73.18125" xlink:href="#m96f17eed30" y="197.059192"/>
       </g>
      </g>
      <g id="text_8">
@@ -17349,7 +17349,7 @@ z
     <g id="ytick_2">
      <g id="line2d_8">
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="73.18125" xlink:href="#m719b66ba05" y="151.114082"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="73.18125" xlink:href="#m96f17eed30" y="151.114082"/>
       </g>
      </g>
      <g id="text_9">
@@ -17365,7 +17365,7 @@ z
     <g id="ytick_3">
      <g id="line2d_9">
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="73.18125" xlink:href="#m719b66ba05" y="105.168971"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="73.18125" xlink:href="#m96f17eed30" y="105.168971"/>
       </g>
      </g>
      <g id="text_10">
@@ -17381,7 +17381,7 @@ z
     <g id="ytick_4">
      <g id="line2d_10">
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="73.18125" xlink:href="#m719b66ba05" y="59.223861"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="73.18125" xlink:href="#m96f17eed30" y="59.223861"/>
       </g>
      </g>
      <g id="text_11">
@@ -17397,7 +17397,7 @@ z
     <g id="ytick_5">
      <g id="line2d_11">
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="73.18125" xlink:href="#m719b66ba05" y="13.27875"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="73.18125" xlink:href="#m96f17eed30" y="13.27875"/>
       </g>
      </g>
      <g id="text_12">
@@ -17641,7 +17641,7 @@ z
     </g>
    </g>
    <g id="line2d_12">
-    <path clip-path="url(#p4719cd78fb)" d="M 88.717332 19.575821 
+    <path clip-path="url(#p1aef70d634)" d="M 88.717332 19.575821 
 L 91.855934 112.724187 
 L 94.994537 150.39113 
 L 98.133139 170.558491 
@@ -17744,7 +17744,7 @@ L 399.43897 218.696134
 " style="fill:none;stroke:#0000ff;stroke-dasharray:11.1,4.8;stroke-dashoffset:0;stroke-width:3;"/>
    </g>
    <g id="line2d_13">
-    <path clip-path="url(#p4719cd78fb)" d="M 88.717332 162.642199 
+    <path clip-path="url(#p1aef70d634)" d="M 88.717332 162.642199 
 L 91.855934 170.273525 
 L 94.994537 175.120019 
 L 98.133139 193.876625 
@@ -17847,210 +17847,210 @@ L 399.43897 218.69381
 " style="fill:none;stroke:#ff0000;stroke-linecap:square;stroke-width:2;"/>
    </g>
    <g id="line2d_14">
-    <path clip-path="url(#p4719cd78fb)" d="M 88.717332 113.70683 
-L 91.855934 180.990759 
-L 94.994537 198.146064 
-L 98.133139 205.76289 
-L 101.271742 209.331646 
-L 104.410344 211.990429 
-L 107.548946 213.519238 
-L 110.687549 214.628802 
-L 113.826151 215.251267 
-L 116.964754 215.807378 
-L 120.103356 216.327632 
-L 123.241958 216.472658 
-L 126.380561 216.784394 
-L 129.519163 216.983893 
-L 132.657766 217.173259 
-L 135.796368 217.376633 
-L 138.93497 217.511313 
-L 142.073573 217.560971 
-L 145.212175 217.649871 
-L 148.350778 217.748968 
-L 151.48938 217.837265 
-L 154.627982 217.905077 
-L 157.766585 217.960242 
-L 160.905187 218.037877 
-L 164.04379 218.055882 
-L 167.182392 218.109975 
-L 170.320994 218.127331 
-L 173.459597 218.165461 
-L 176.598199 218.21923 
-L 179.736802 218.219658 
-L 182.875404 218.247978 
-L 186.014006 218.250612 
-L 189.152609 218.281484 
-L 192.291211 218.295836 
-L 195.429814 218.303482 
-L 198.568416 218.331301 
-L 201.707018 218.335005 
-L 204.845621 218.353184 
-L 207.984223 218.353892 
-L 211.122826 218.368976 
-L 214.261428 218.374495 
-L 217.40003 218.380807 
-L 220.538633 218.383513 
-L 223.677235 218.3929 
-L 226.815838 218.400796 
-L 229.95444 218.401161 
-L 233.093042 218.407375 
-L 236.231645 218.409349 
-L 239.370247 218.411699 
-L 242.50885 218.416111 
-L 245.647452 218.415749 
-L 248.786054 218.421461 
-L 251.924657 218.424103 
-L 255.063259 218.425457 
-L 258.201862 218.426645 
-L 261.340464 218.428628 
-L 264.479066 218.429287 
-L 267.617669 218.430745 
-L 270.756271 218.432745 
-L 273.894874 218.43265 
-L 277.033476 218.434324 
-L 280.172078 218.434418 
-L 283.310681 218.435354 
-L 286.449283 218.436211 
-L 289.587886 218.436715 
-L 292.726488 218.43747 
-L 295.86509 218.437757 
-L 299.003693 218.438513 
-L 302.142295 218.438872 
-L 305.280898 218.439192 
-L 308.4195 218.43954 
-L 311.558102 218.439829 
-L 314.696705 218.440027 
-L 317.835307 218.440178 
-L 320.97391 218.44043 
-L 324.112512 218.440615 
-L 327.251114 218.440857 
-L 330.389717 218.440841 
-L 333.528319 218.441073 
-L 336.666922 218.441231 
-L 339.805524 218.441389 
-L 342.944127 218.441365 
-L 346.082729 218.441519 
-L 349.221331 218.441606 
-L 352.359934 218.441705 
-L 355.498536 218.441765 
-L 358.637139 218.441797 
-L 361.775741 218.441839 
-L 364.914343 218.441893 
-L 368.052946 218.441934 
-L 371.191548 218.441989 
-L 374.330151 218.442018 
-L 377.468753 218.442044 
-L 380.607355 218.442053 
-L 383.745958 218.442098 
-L 386.88456 218.442107 
-L 390.023163 218.442129 
-L 393.161765 218.442148 
-L 396.300367 218.442171 
-L 399.43897 218.442183 
-" style="fill:none;stroke:#bfbf00;stroke-dasharray:4,6.6;stroke-dashoffset:0;stroke-width:4;"/>
+    <path clip-path="url(#p1aef70d634)" d="M 88.717332 96.425664 
+L 91.855934 168.123597 
+L 94.994537 189.764951 
+L 98.133139 199.352985 
+L 101.271742 204.682931 
+L 104.410344 208.48598 
+L 107.548946 210.661743 
+L 110.687549 212.464428 
+L 113.826151 213.264309 
+L 116.964754 214.034616 
+L 120.103356 214.293535 
+L 123.241958 215.211366 
+L 126.380561 215.651101 
+L 129.519163 215.947224 
+L 132.657766 216.024181 
+L 135.796368 216.461752 
+L 138.93497 216.59333 
+L 142.073573 216.794195 
+L 145.212175 216.85711 
+L 148.350778 216.941627 
+L 151.48938 217.060082 
+L 154.627982 217.070789 
+L 157.766585 217.257945 
+L 160.905187 217.31809 
+L 164.04379 217.379034 
+L 167.182392 217.437248 
+L 170.320994 217.388801 
+L 173.459597 217.503983 
+L 176.598199 217.566225 
+L 179.736802 217.560012 
+L 182.875404 217.620245 
+L 186.014006 217.64457 
+L 189.152609 217.640579 
+L 192.291211 217.682872 
+L 195.429814 217.670233 
+L 198.568416 217.702383 
+L 201.707018 217.719401 
+L 204.845621 217.718225 
+L 207.984223 217.743019 
+L 211.122826 217.74873 
+L 214.261428 217.746027 
+L 217.40003 217.770073 
+L 220.538633 217.771922 
+L 223.677235 217.778652 
+L 226.815838 217.782959 
+L 229.95444 217.783706 
+L 233.093042 217.793108 
+L 236.231645 217.798875 
+L 239.370247 217.801562 
+L 242.50885 217.807742 
+L 245.647452 217.806579 
+L 248.786054 217.808235 
+L 251.924657 217.813718 
+L 255.063259 217.816416 
+L 258.201862 217.813802 
+L 261.340464 217.816779 
+L 264.479066 217.819755 
+L 267.617669 217.823755 
+L 270.756271 217.824958 
+L 273.894874 217.824296 
+L 277.033476 217.825134 
+L 280.172078 217.826844 
+L 283.310681 217.827778 
+L 286.449283 217.82777 
+L 289.587886 217.829571 
+L 292.726488 217.830048 
+L 295.86509 217.831508 
+L 299.003693 217.831353 
+L 302.142295 217.831842 
+L 305.280898 217.832105 
+L 308.4195 217.832437 
+L 311.558102 217.832883 
+L 314.696705 217.833351 
+L 317.835307 217.833264 
+L 320.97391 217.834066 
+L 324.112512 217.83406 
+L 327.251114 217.834273 
+L 330.389717 217.834176 
+L 333.528319 217.834466 
+L 336.666922 217.834538 
+L 339.805524 217.834535 
+L 342.944127 217.834666 
+L 346.082729 217.834959 
+L 349.221331 217.835084 
+L 352.359934 217.835195 
+L 355.498536 217.835198 
+L 358.637139 217.83534 
+L 361.775741 217.835361 
+L 364.914343 217.835398 
+L 368.052946 217.83541 
+L 371.191548 217.83555 
+L 374.330151 217.835605 
+L 377.468753 217.835608 
+L 380.607355 217.835694 
+L 383.745958 217.835655 
+L 386.88456 217.835656 
+L 390.023163 217.835727 
+L 393.161765 217.835768 
+L 396.300367 217.835783 
+L 399.43897 217.835792 
+" style="fill:none;stroke:#008000;stroke-dasharray:19.2,4.8,3,4.8;stroke-dashoffset:0;stroke-width:3;"/>
    </g>
    <g id="line2d_15">
-    <path clip-path="url(#p4719cd78fb)" d="M 88.717332 96.852439 
-L 91.855934 169.683312 
-L 94.994537 191.176234 
-L 98.133139 200.026475 
-L 101.271742 205.856718 
-L 104.410344 208.367759 
-L 107.548946 211.097233 
-L 110.687549 212.353407 
-L 113.826151 213.46729 
-L 116.964754 214.071544 
-L 120.103356 214.776188 
-L 123.241958 215.459508 
-L 126.380561 215.706542 
-L 129.519163 215.800191 
-L 132.657766 216.437025 
-L 135.796368 216.56551 
-L 138.93497 216.692883 
-L 142.073573 216.819212 
-L 145.212175 217.064252 
-L 148.350778 216.986969 
-L 151.48938 217.248826 
-L 154.627982 217.31902 
-L 157.766585 217.376532 
-L 160.905187 217.481323 
-L 164.04379 217.491528 
-L 167.182392 217.523348 
-L 170.320994 217.53459 
-L 173.459597 217.644454 
-L 176.598199 217.668419 
-L 179.736802 217.686117 
-L 182.875404 217.72727 
-L 186.014006 217.721784 
-L 189.152609 217.772433 
-L 192.291211 217.772424 
-L 195.429814 217.78876 
-L 198.568416 217.81371 
-L 201.707018 217.806819 
-L 204.845621 217.835795 
-L 207.984223 217.845949 
-L 211.122826 217.862972 
-L 214.261428 217.87339 
-L 217.40003 217.869579 
-L 220.538633 217.883515 
-L 223.677235 217.891315 
-L 226.815838 217.891459 
-L 229.95444 217.89707 
-L 233.093042 217.906896 
-L 236.231645 217.904036 
-L 239.370247 217.916451 
-L 242.50885 217.917771 
-L 245.647452 217.920717 
-L 248.786054 217.924754 
-L 251.924657 217.925945 
-L 255.063259 217.925336 
-L 258.201862 217.929506 
-L 261.340464 217.930204 
-L 264.479066 217.930729 
-L 267.617669 217.930574 
-L 270.756271 217.934303 
-L 273.894874 217.934549 
-L 277.033476 217.93767 
-L 280.172078 217.939077 
-L 283.310681 217.938895 
-L 286.449283 217.939643 
-L 289.587886 217.94039 
-L 292.726488 217.94142 
-L 295.86509 217.941901 
-L 299.003693 217.941792 
-L 302.142295 217.942808 
-L 305.280898 217.943143 
-L 308.4195 217.943589 
-L 311.558102 217.943685 
-L 314.696705 217.943615 
-L 317.835307 217.943877 
-L 320.97391 217.944399 
-L 324.112512 217.944187 
-L 327.251114 217.944845 
-L 330.389717 217.94501 
-L 333.528319 217.945187 
-L 336.666922 217.945089 
-L 339.805524 217.945161 
-L 342.944127 217.945406 
-L 346.082729 217.945514 
-L 349.221331 217.945655 
-L 352.359934 217.945775 
-L 355.498536 217.945809 
-L 358.637139 217.945836 
-L 361.775741 217.945842 
-L 364.914343 217.946012 
-L 368.052946 217.946088 
-L 371.191548 217.946005 
-L 374.330151 217.946118 
-L 377.468753 217.946108 
-L 380.607355 217.946173 
-L 383.745958 217.946166 
-L 386.88456 217.946194 
-L 390.023163 217.946253 
-L 393.161765 217.946269 
-L 396.300367 217.946285 
-L 399.43897 217.946287 
-" style="fill:none;stroke:#008000;stroke-dasharray:19.2,4.8,3,4.8;stroke-dashoffset:0;stroke-width:3;"/>
+    <path clip-path="url(#p1aef70d634)" d="M 88.717332 95.191043 
+L 91.855934 164.192644 
+L 94.994537 186.801201 
+L 98.133139 197.180916 
+L 101.271742 203.094427 
+L 104.410344 206.838173 
+L 107.548946 209.265169 
+L 110.687549 210.968956 
+L 113.826151 212.180424 
+L 116.964754 213.141211 
+L 120.103356 213.853209 
+L 123.241958 214.466987 
+L 126.380561 214.896787 
+L 129.519163 215.311982 
+L 132.657766 215.541212 
+L 135.796368 215.821888 
+L 138.93497 216.064796 
+L 142.073573 216.16912 
+L 145.212175 216.396681 
+L 148.350778 216.541146 
+L 151.48938 216.638069 
+L 154.627982 216.727757 
+L 157.766585 216.850287 
+L 160.905187 216.917092 
+L 164.04379 216.988189 
+L 167.182392 217.070426 
+L 170.320994 217.09056 
+L 173.459597 217.143566 
+L 176.598199 217.178422 
+L 179.736802 217.209363 
+L 182.875404 217.260846 
+L 186.014006 217.29712 
+L 189.152609 217.325606 
+L 192.291211 217.336308 
+L 195.429814 217.356603 
+L 198.568416 217.378476 
+L 201.707018 217.393437 
+L 204.845621 217.402141 
+L 207.984223 217.418956 
+L 211.122826 217.431601 
+L 214.261428 217.443621 
+L 217.40003 217.452635 
+L 220.538633 217.461456 
+L 223.677235 217.470616 
+L 226.815838 217.478459 
+L 229.95444 217.48321 
+L 233.093042 217.488414 
+L 236.231645 217.494912 
+L 239.370247 217.497933 
+L 242.50885 217.501954 
+L 245.647452 217.507209 
+L 248.786054 217.509758 
+L 251.924657 217.512971 
+L 255.063259 217.51521 
+L 258.201862 217.51728 
+L 261.340464 217.51923 
+L 264.479066 217.521545 
+L 267.617669 217.523733 
+L 270.756271 217.525393 
+L 273.894874 217.526204 
+L 277.033476 217.52761 
+L 280.172078 217.528982 
+L 283.310681 217.52988 
+L 286.449283 217.530826 
+L 289.587886 217.531447 
+L 292.726488 217.532632 
+L 295.86509 217.533086 
+L 299.003693 217.533854 
+L 302.142295 217.534319 
+L 305.280898 217.534886 
+L 308.4195 217.535122 
+L 311.558102 217.535673 
+L 314.696705 217.536071 
+L 317.835307 217.536406 
+L 320.97391 217.536654 
+L 324.112512 217.536964 
+L 327.251114 217.537237 
+L 330.389717 217.537337 
+L 333.528319 217.537575 
+L 336.666922 217.537692 
+L 339.805524 217.537903 
+L 342.944127 217.538033 
+L 346.082729 217.538179 
+L 349.221331 217.538276 
+L 352.359934 217.538381 
+L 355.498536 217.53846 
+L 358.637139 217.538552 
+L 361.775741 217.538615 
+L 364.914343 217.538697 
+L 368.052946 217.538737 
+L 371.191548 217.538799 
+L 374.330151 217.538837 
+L 377.468753 217.53889 
+L 380.607355 217.538928 
+L 383.745958 217.538963 
+L 386.88456 217.539016 
+L 390.023163 217.539025 
+L 393.161765 217.539057 
+L 396.300367 217.539079 
+L 399.43897 217.539089 
+" style="fill:none;stroke:#bfbf00;stroke-dasharray:4,6.6;stroke-dashoffset:0;stroke-width:4;"/>
    </g>
    <g id="patch_3">
     <path d="M 73.18125 228.65215 
@@ -18275,7 +18275,7 @@ L 281.303177 123.88543
   </g>
  </g>
  <defs>
-  <clipPath id="p4719cd78fb">
+  <clipPath id="p1aef70d634">
    <rect height="219.032345" width="341.793802" x="73.18125" y="9.619805"/>
   </clipPath>
  </defs>
